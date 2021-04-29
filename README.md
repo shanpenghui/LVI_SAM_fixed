@@ -1,3 +1,34 @@
+# LVI-SAM-fixed
+
+Run on ubuntu 20.04 + noetic
+
+## 1. ThirdParties
+
+- gtsam : 4.1rc
+
+- Eigen : 3.3.7
+
+- gflags : 2.2.2
+
+- Ceres : 1.14.0
+
+- Boost : 1.71.0
+
+## 2. Install ros pkgs
+
+```shell
+sudo apt-get install -y ros-noetic-navigation ros-noetic-robot-localization ros-noetic-robot-state-publisher
+```
+
+<p align='center'>
+    <img src="./doc/LVI_SAM_1.gif" alt="drawing" width="800"/>
+</p>
+
+
+<p align='center'>
+    <img src="./doc/LVI_SAM_2.gif" alt="drawing" width="800"/>
+</p>
+
 # LVI-SAM
 
 This repository contains code for a lidar-visual-inertial odometry and mapping system, which combines the advantages of [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM/tree/a246c960e3fca52b989abf888c8cf1fae25b7c25) and [Vins-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono) at a system level.

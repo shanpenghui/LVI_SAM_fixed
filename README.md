@@ -117,6 +117,17 @@ roslaunch lvi_sam run.launch
 rosbag play handheld.bag 
 ```
 
+## mp4 to gif
+
+```shell
+ffmpeg \
+-i simplescreenrecorder-2021-04-29_23.21.12_MOTION.mp4 \
+-r 30 \
+-vf "scale=512:-1,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" \
+-ss 00:00:00 -to 00:01:00 \
+LVI_SAM.gif
+```
+
 ---
 
 ## Paper 
